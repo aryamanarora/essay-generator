@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Overview
+{% endblock %}
+
+{% block main %}
+<div class="jumbotron">
+    <h1 class="display-4">Essay Generator</h1>
+    <p class="lead">Paste some of your essays below. A recurrent neural network will generate something similar (hopefully).</p>
+</div>
+
+<form method="POST">
+    <input name="text">
+    <input type="submit">
+</form>
+{% endblock %}
